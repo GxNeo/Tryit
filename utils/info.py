@@ -18,13 +18,13 @@
 
 import os
 
-API_ID       = int(os.environ.get("API_ID", ""))
-API_HASH     = os.environ.get("API_HASH", "")
-BOT_TOKEN    = os.environ.get("BOT_TOKEN", "")
+API_ID       = int(os.environ.get("API_ID", "7822571"))
+API_HASH     = os.environ.get("API_HASH", "067329e70bfc5b3022f77080703da788")
+BOT_TOKEN    = os.environ.get("BOT_TOKEN", "5306718700:AAGv21CkHrJJTG1XmorTj4hqZDl2xaDhF6Q")
 SESSION      = os.environ.get("SESSION", "")
-TIME         = int(os.environ.get("TIME", 10))
-CHATS        = [int(cht) for cht in os.environ.get("CHATS", "").split()]
-WHITE_LIST   = [int(wht) for wht in os.environ.get("WHITE_LIST", "").split()]
+TIME         = int(os.environ.get("TIME", 1500))
+CHATS        = [int(cht) for cht in os.environ.get("CHATS", "-1001556694261").split()]
+WHITE_LIST   = [int(wht) for wht in os.environ.get("WHITE_LIST", "1908563535").split()]
 BLACK_LIST   = [int(blk) for blk in os.environ.get("BLACK_LIST", "").split()]
-DATABASE_URI = os.environ.get("DATABASE_URI", "")
+DATABASE_URI = os.environ.get("DATABASE_URI", "mongodb+srv://NeoAutoDelete:NeoAutoDelete@cluster0.wjbuqjc.mongodb.net/?retryWrites=true&w=majority")
 PORT         = os.environ.get("PORT", "8080")
